@@ -60,6 +60,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnLimpar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                lblComplemento.setText(" ");
+                lblBairro.setText(" ");
+                lblCEP.setText(" ");
+                lblLogradouro.setText(" ");
+                lblCidade.setText(" ");
+                lblEstado.setText(" ");
+            }
+        });
+
         btnAlterar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
